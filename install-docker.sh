@@ -4,7 +4,7 @@
 set -euf pipefail
 
 # 일반계정 이름으로
-DOCKER_USER=ubuntu
+DOCKER_USER=root
 
 # Install dependencies
 sudo apt-get update && sudo apt-get install -y \
