@@ -1,6 +1,6 @@
 FROM jenkins/jenkins:latest
 ARG DOCKER_GID=1000
-USER ubuntu
+USER root
 
 # aws cli install
 COPY scripts/install-awscli.sh install-awscli.sh
