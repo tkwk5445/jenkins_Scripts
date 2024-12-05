@@ -25,5 +25,7 @@ echo \
 # Install Docker CE
 sudo apt-get update && sudo apt-get install -y docker-ce docker-ce-cli containerd.io
 
-# Use Docker without ubuntu
+# Use Docker without root
 sudo usermod -aG docker $DOCKER_USER
+sudo systemctl enable docker
+sudo systemctl start docker
