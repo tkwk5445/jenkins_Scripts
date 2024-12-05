@@ -4,7 +4,7 @@
 set -euf pipefail
 
 # 일반계정 이름으로
-DOCKER_USER=root
+DOCKER_USER=ubuntu
 
 # Install dependencies
 sudo apt-get update && sudo apt-get install -y \
@@ -25,5 +25,5 @@ echo \
 # Install Docker CE
 sudo apt-get update && sudo apt-get install -y docker-ce docker-ce-cli containerd.io
 
-# Use Docker without root
+# Use Docker without ubuntu
 sudo usermod -aG docker $DOCKER_USER
